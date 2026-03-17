@@ -25,299 +25,401 @@ webtechnologie/
 - Zet je Javascript file steeds in strict mode (`"use strict"`);
 - Volg de [Coding Guidelines](https://apwt.gitbook.io/webtechnologie/coding-guidelines)
 
-## Oefening 1: Hello World!
+### oefening 1: som
 
-### Leerdoelen
+### leerdoelen
 
-- String interpolatie
-- Beslissingen maken (conditionals)
+* werken met arrays
+* lengte van arrays opvragen
+* arrays doorlopen met een for-loop
 
-### Functionele analyse
+### functionele analyse
 
-Het programma leest een naam, achternaam en leeftijd in en toont de informatie enkel als de invoer correct is.
+Je programma geeft de som van een rij getallen terug.
 
-### Technische analyse
+### technische analyse
 
-Schrijf JavaScript dat:
+Je begint met een `array` te maken van de getallen 1, 2, 3, 4, 5 en 6. Je maakt een variabele `som` en kent er de waarde 0 aan toe.
 
-1. Drie variabelen inleest: voornaam, achternaam en leeftijd.
-2. Controleert dat naam en achternaam niet leeg zijn.
-3. Controleert dat de leeftijd tussen 12 en 60 jaar ligt.
-4. Geeft passende meldingen bij ongeldige invoer:
-    - **Naam/Achternaam ontbreekt:** "Vul zowel voornaam als achternaam in!"
-    - **Leeftijd niet tussen 12 en 60:** "U behoort niet tot de gezochte leeftijdsklasse!"
-5. Vormt de boodschap correct en toont deze met `console.log()`.
+Vervolgens maak je een lus die van 0 tot het aantal getallen in de array itereert. Elke iteratie tel je het huidige getal op bij een variabele som.
 
-## Oefening 2: Schrikkeljaar
+De som print je af op in de console.
 
-#### Leerdoelen
+### voorbeeldinteractie
+![voorbeeldinteractie som](./voorbeeldinteractie-som.avif)
 
-- Beslissingen maken
+### oefening 2: namen
 
-#### Functionele analyse
+### leerdoelen
 
-De website bevat een invoerveld voor een jaartal en jouw programma bepaalt of het een schrikkeljaar is.
+* werken met arrays
+* lengte van arrays opvragen
+* arrays doorlopen met een for-loop
 
-#### Technische analyse
+### functionele analyse
 
-1. Een variabele bevat het jaartal.
-2. Het programma bepaalt of het een schrikkeljaar is volgens de regels:
-    - Een jaar is een schrikkeljaar als het deelbaar is door **4**,
-    - Behalve als het deelbaar is door **100**, tenzij het ook deelbaar is door **400**.
-3. Zet volgende flowchart om in code: ![flowchart](./flowchart-schrikkeljaar.png)
+Je programma genereert op basis van 2 arrays een lijst van voor- en achternamen.
 
-## Oefening 3: Simpele Rekenmachine (if-statements)
+### technische analyse
 
-#### Leerdoelen
+Maak 2 string-arrays aan. De eerste geef je 5 voornamen, de andere 5 achternamen.
 
-- Beslissingen
-- Geneste `if`-statements
+Controleer dat de lengte van beide arrays gelijk is. Zo niet print je een foutboodschap.
 
-#### Functionele analyse
+Gebruik een for-loop om door de lijst van namen te loopen.
 
-Het programma voert een eenvoudige berekening uit met twee getallen en een operator (`+`, `-`, `*`, `/`).
+Toon vervolgens een lijst uit met voor- en achternamen op de scherm van de browser.
 
-#### Technische analyse
+### voorbeeldinteractie
 
-1. Twee variabelen bevatten de getallen.
-2. Een derde variabele bevat de operator.
-3. Gebruik `if`-statements om de juiste berekening uit te voeren.
-4. Voer een controle uit zodat er niet door **0** wordt gedeeld.
-5. Toon een foutmelding bij een ongeldige operator.
+![voorbeeldinteractie namen](./voorbeeldinteractie-namen.avif)
 
-## Oefening 4: Simpele Rekenmachine (switch-case)
+### oefening 3: vrienden
 
-#### Leerdoelen
+### leerdoelen
 
-- Beslissingen
-- Gebruik van `switch`
+* werken met gebruikersinteractie
+* werken met for-loop
+* toevoegen van elementen in een array
 
-#### Functionele analyse
+### functionele analyse
 
-Zelfde opdracht als oefening 3, maar nu met een `switch`-statement.
+Je programma vraagt hoeveel vrienden er moeten worden ingevoerd. Op basis daarvan kan je daarna je vrienden toevoegen aan een lijst. Nadien wordt de lijst uitgeprint (laatste ingave eerst).
 
-#### Technische analyse
+### technische analyse
 
-1. Gebruik een `switch`-constructie voor de operator-keuze.
-2. Controleer dat delen door **0** niet gebeurt.
-3. Toon een foutmelding bij een ongeldige operator.
+Vraag de gebruiker hoeveel namen er moeten worden ingegeven. Maak hiervoor gebruik van input-veld.
 
-## Oefening 5: Days, Hours and Minutes
+Vraag dan X aantal keer de naam van de vriend dat je wenst toe te voegen. **Hint**: je kan voor deze oefening `prompt()` gebruiken om de gebruiker te vragen achter de namen.
 
-#### Leerdoelen
+Voeg de vrienden toe aan een array van vrienden.
 
-- Gebruik van de **modulo-operator**
+Toon vervolgens de lijst met vrienden in een lijst.
 
-#### Functionele analyse
+### voorbeeldinteractie
 
-Het programma simuleert een klok die een tijdstip berekent na optelling van een bepaalde duur.
+![voorbeeldinteractie](./voorbeeldinteractie-vriendenlijst.gif)
 
-#### Technische analyse
+### oefening 4: punten
 
-1. De gebruiker voert een **startuur** en **startminuten** in.
-2. Twee extra variabelen bevatten de uren en minuten die moeten worden opgeteld.
-3. Controleer dat alle invoervelden ingevuld zijn.
-4. Bereken het nieuwe tijdstip:
-    - **Minuten overschrijden 60?** → Tel extra uren op.
-    - **Uren overschrijden 24?** → Bereken hoeveel dagen erbij komen.
-5. Geef de output correct weer:
-    - "Dit tijdstip valt nog op dezelfde dag."
-    - "Dit is het tijdstip **1 dag later**."
-    - "Dit is het tijdstip **X dagen later**."
-6. Gebruik **modulo (`%`)** en `Math.floor()` voor de berekening.
+### leerdoelen
 
-## Oefening 6: Cijfer omzetten naar tekst
+* werken met for-of-loop
+* werken met arrays
+* wiskundige bewerkingen
 
-### Leerdoelen
-- Switch-statements
-- Beslissingen
+### functionele analyse
 
-### Functionele analyse
-Een student krijgt een cijfer (0-10). Het programma zet dit cijfer om in een tekstuele beoordeling.
+Je programma verwerkt een puntenlijst aan resultaten en print het gemiddelde, het percentage en het aantal gebuisde vakken uit.
 
-### Technische analyse
-- Lees een cijfer in een variabele.
-- Gebruik een switch-statement om het cijfer om te zetten naar:
-    - 0-2: "Zeer slecht"
-    - 3-4: "Onvoldoende"
-    - 5-6: "Voldoende"
-    - 7-8: "Goed"
-    - 9-10: "Uitstekend"
-- Als het cijfer buiten de 0-10 range ligt, geef dan een foutmelding.
-- Toon het resultaat in de console.
+### technische analyse
 
-## Oefening 7: Omrekenen van graden
+Gebruik voor deze oefening volgende array:
 
-### Leerdoelen
-- Functies
-- Rekenkundige operaties
+```
+const grades = [16,12,16,7,17,14,9,8,18,12];
+```
 
-### Functionele analyse
-Schrijf een programma dat temperaturen kan omrekenen tussen Celsius en Fahrenheit.
+Gebruik een for-of-loop om door de grades te loopen.
 
-### Technische analyse
-- Vraag de gebruiker om een temperatuur en een eenheid (C of F).
-- Gebruik een functie die:
-    - Celsius omzet naar Fahrenheit met de formule: (C × 9/5) + 32
-    - Fahrenheit omzet naar Celsius met de formule: (F - 32) × 5/9
-- Toon de omgezette waarde in de console.
-- Geef een foutmelding als de eenheid niet correct is ingevoerd.
+Bereken het gemiddelde, het percentage en het aantal gebuisde vakken.
 
-## Oefening 8: Getal raden
+Toon deze waardes op het scherm in een lijst.
 
-### Leerdoelen
-- Beslissingen
-- Willekeurige getallen
+### voorbeeldinteractie
 
-### Functionele analyse
-**Kies** zelf een getal tussen 1 en 10 en sla het op in een variabele `answer`. De gebruiker moet raden welk getal het is.
+![voorbeeldinteractie](./voorbeeldinteractie-punten.gif)
 
-### Technische analyse
-- Genereer een willekeurig getal tussen 1 en 10.
-- Vraag de gebruiker om een gok (simuleer dit met een variabele).
-- Controleer of het getal juist is:
-    - Zo ja, toon: "Gefeliciteerd, je hebt het juiste getal geraden!"
-    - Zo nee, toon: "Helaas, het juiste getal was X."
-- Toon het resultaat in de console.
+### oefening 5: punten met vragen
 
-## Oefening 9: Willekeurig getal
+### leerdoelen
 
-### Leerdoelen
-- Willekeurige getallen
+* gebruiken van do while loop
+* werken met arrays
+* input vragen
 
-### Functionele analyse
-**Genereer** een willekeurig getal tussen 1 en 10 en sla het op in een variabele `answer`. De gebruiker moet raden welk getal het is.
+### functionele analyse
 
-### Technische analyse
-- Genereer een willekeurig getal tussen 1 en 10 en sla deze op in een variabele "answer".
-- Vraag de gebruiker om een gok (simuleer dit met een variabele).
-- Controleer of het getal juist is:
-    - Zo ja, toon: "Gefeliciteerd, je hebt het juiste getal geraden!"
-    - Zo nee, toon: "Helaas, het juiste getal was X."
-- Toon het resultaat in de console.
+Je breidt de punten oefening uit zodat de gebruiker zelf de punten kan ingeven.
 
-**Hint**: Om een willekeurig getal te genereren kun je gebruik maken van de `Math.random()` functie. Deze functie zal altijd een kommagetal tussen 0 en 1 teruggeven (soms exact 0, maar nooit exact 1). Met de volgende functie kun je dit willekeurig kommagetal omzetten naar een geheel getal tussen twee getallen: `Math.floor(Math.random() * (maximumGetal - minimumGetal) + minimumGetal)`.
+### technische analyse
+
+Schrijf eerst een do while loop om de punten te vragen. Op de moment dat de gebruiker geen getal meer ingeeft dan worden dezelfde waarden getoond aan de gebruiker als in de vorige oefening.
+
+### voorbeeldinteractie
+
+![voorbeeldinteractie](./voorbeeldinteractie-punten-met-vragen.gif)
+
+### oefening 6: pokémon team
+
+### leerdoelen
+
+* gebruiken van loops
+* werken met arrays
+* zoeken in arrays
 
-Zorg dat je deze formule begrijpt. Bekijk hiervoor wat gebeurt als `Math.random()` de zijn kleinste en grootste mogelijke waarden aanneemt.
+### functionele analyse
 
-## Oefening 10: Maaltafelgenerator
+Je programma maakt het mogelijk om de gebruiker een team van pokémon samen te stellen.
 
-### Leerdoelen
+### technische analyse
 
-- Werken met een for-loop
-- Wiskundige bewerkingen
-- Variabelen declareren met let en const
-- Werken met controlestructuren
+Gegeven is de volgende array van 20 pokemon:
 
-### Functionele analyse
+```
+let pokemon = [
+    "Bulbasaur",
+    "Ivysaur",
+    "Venusaur",
+    "Charmander",
+    "Charmeleon",
+    "Charizard",
+    "Squirtle",
+    "Wartortle",
+    "Blastoise",
+    "Caterpie",
+    "Metapod",
+    "Butterfree",
+    "Weedle",
+    "Kakuna",
+    "Beedrill",
+    "Pidgey",
+    "Pidgeotto",
+    "Pidgeot",
+    "Rattata",
+    "Raticate",
+    "Spearow",
+];
+```
 
-Je programma genereert op basis van een hardgecodeerde waarde een maaltafelreeks voor een bepaalde maaltafel met een vast aantal iteraties.
+* Maak een array `team`. Deze array bevat de pokémon van de gebruiker van het programma.
+* Gebruik een lus om de pokémon in een genummerde lijst te tonen aan de gebruiker.
 
-### Technische analyse
+```
+1. Bulbasaur
+2. Ivysaur
+3. Venusaur
+4. Charmander
+5. Charmeleon
+...
+```
 
-- Declareer een const genaamd `baseNumber` (het getal dat we telkens gaan vermenigvuldigen) en ken hier een getal aan toe.
-- Declareer een const genaamd `numberOfIterations` (de lengte van de maaltafel) en ken hier een getal aan toe.
-- Gebruik een stringvariabele om de maaltafel bij te houden.
-- Gebruik een for-loop om de maaltafelreeks op te bouwen en voeg elk resultaat toe aan de string, gescheiden door een ", ".
-- Print de maaltafel uit in de console.
+* Vraag daarna aan de gebruiker welke pokémon er moet toegevoegd worden aan het team. Dit doe je aan de hand van de index van de pokemon. Dit doe je tot de gebruiker STOP ingeeft. Je kan dit doen aan de hand van een `do while` loop.
 
-## Oefening 11: Raster Generator
+```
+Welke pokemon wil je in je team? [1-21]: 4
+Welke pokemon wil je in je team? [1-21]: 3
+Welke pokemon wil je in je team? [1-21]: STOP
+```
 
-### Leerdoelen
+* Als de gebruiker een pokémon ingeeft die al in het team zet dan krijgt hij hiervan een melding en wordt de pokémon niet toegevoegd:
 
-- Werken met een for-loop
-- Werken met strings
-- Variabelen declareren met let en const
+```
+Welke pokemon wil je in je team? [1-20]: 4
+Welke pokemon wil je in je team? [1-20]: 3
+Welke pokemon wil je in je team? [1-20]: 4
+Deze pokemon zit al in je team
+Welke pokemon wil je in je team? [1-20]: 2
+Welke pokemon wil je in je team? [1-20]: STOP
+```
 
-### Functionele analyse
+* Als de pokémon niet bekend is (dus het ingegeven nummer groter is dan de lengte van de array) wordt er ook een melding gegeven:
 
-Je programma genereert een raster van kruisjes op basis van hardgecodeerde waarden.
+```
+Welke pokemon wil je in je team? [1-21]: 22
+Deze pokemon ken ik niet
+Welke pokemon wil je in je team? [1-21]: 4
+```
 
-### Technische analyse
+* Als je STOP hebt ingegeven dan wordt het team van de gebruiker op het scherm getoond:
 
-- Declareer een const `columns` (kolommen) en ken hier een getal aan toe.
-- Declareer een const `rows` (rijen) en ken hier een getal aan toe.
-- Gebruik een for-loop om de rijen te doorlopen.
-- Gebruik een geneste for-loop om de kolommen te doorlopen.
-- Print elke rij met kruisjes (`X`), gescheiden door een spatie.
+```
+Welke pokemon wil je in je team? [0-20]: 1
+Welke pokemon wil je in je team? [0-20]: 2
+Welke pokemon wil je in je team? [0-20]: 3
+Welke pokemon wil je in je team? [0-20]: 4
+Welke pokemon wil je in je team? [0-20]: 5
+Welke pokemon wil je in je team? [0-20]: 6
+Welke pokemon wil je in je team? [0-20]: STOP
+Jouw team van pokemon is: 
+1. Ivysaur
+2. Venusaur
+3. Charmander
+4. Charmeleon
+5. Charizard
+6. Squirtle
+```
 
----
+### voorbeeldinteractie
 
-## Oefening 12: Raad het Getal
+![voorbeeldinteractie](./voorbeeldinteractie-pokemonteam.gif)
 
-### Leerdoelen
+### oefening 7: tweedimensionale som
 
-- Werken met een do-while-loop
-- Werken met getallen
-- Werken met controlestructuren
+### leerdoelen
 
-### Functionele analyse
+* twee dimensionale arrays
 
-Het programma laat de gebruiker een getal raden tussen 0 en 30. De invoer is hardcoded en wordt gecontroleerd in een loop.
+### functionele analyse
 
-### Technische analyse
+We gaan de som berekenen van alle waarden van een tabel (of tweedimensionale array).
 
-- Stel een variabele `secretNumber` in op een vaste waarde.
-- Gebruik een array met hardgecodeerde gokpogingen.
-- Gebruik een do-while-loop om de ingevoerde waarde te controleren.
-- Geef aan of het getal hoger of lager moet zijn.
-- Stop zodra het juiste getal geraden is.
+### technische analyse
 
-## Oefening 13: Som van Even Getallen
+We beginnen met de volgende twee dimensionele array:
 
-### Leerdoelen
+```
+let spreadsheet = [
+    [100, 104, 105],
+    [144, 110, 109],
+    [105, 107, 111]
+];
+```
 
-- Werken met een for-loop
-- Wiskundige bewerkingen
-- Variabelen declareren met let en const
+* Maak een variabele `sumRow1` en ken de som van de drie elementen van de eerste rij hieraan toe.
+* Print de som uit op het scherm.
+* Doe hetzelfde voor de andere rijen.
 
-### Functionele analyse
+### voorbeeldinteractie
 
-Je programma berekent de som van alle even getallen tot en met een bepaalde hardgecodeerde grens.
+![voorbeeldinteractie](./voorbeeldinteractie-2dsom.png)
 
-### Technische analyse
+# Oefeningen functies
 
-- Declareer een const `limit` (de grens) en ken hier een getal aan toe.
-- Declareer een variabele om de som bij te houden.
-- Gebruik een for-loop om door de getallen te itereren.
-- Controleer of het getal even is en tel het op bij de som.
-- Print de uiteindelijke som uit.
+## oefening 8: opwarmers
+Schrijf de volgende functies om aan te tonen dat je alle concepten onder de knie hebt:
 
-## Oefening 14: Aftellen
+* Schrijf een functie zonder argumenten die een getal teruggeeft.
+* Schrijf een functie zonder argumenten die een string teruggeeft.
+* Schrijf een functie zonder argumenten die een boolean teruggeeft.
+* Schrijf een functie zonder argumenten die een string afprint in de console.
+* Schrijf een functie met twee argumenten (twee getallen) die een getal op het scherm afprint. Het getal dat wordt getoond moet iets doen met deze twee getallen.
 
-### Leerdoelen
+## oefening 9: text-box-functie
 
-- Werken met een while-loop
-- Werken met aftellussen
-- Variabelen declareren met let en const
+### leerdoelen
 
-### Functionele analyse
+* input lezen
+* schrijven van eigen functies
 
-Je programma telt af vanaf een hardcoded startwaarde tot nul en print bij elke stap een melding.
+### functionele analyse
 
-### Technische analyse
+Je programma toont een stuk tekst in je console in een tekstvak
 
-- Declareer een const `initialValue` (de startwaarde) en ken hier een getal aan toe.
-- Gebruik een while-loop om af te tellen.
-- Print bij elke iteratie het huidige getal.
-- Stop zodra het getal nul bereikt.
+### technische analyse
 
+Je kan de code om een box te tekenen hergebruiken uit een eerdere oefening. Je moet ze wel nog omzetten naar een functie.
 
-## Oefening 15: Fibonacci-reeks
+Je maakt een functie `printTextBox` met een string als parameter. De functie toont de tekst in het tekstvak.
 
-### Leerdoelen
+Je roept de functie een aantal keer aan met verschillende parameters.
 
-- Werken met loops
-- Werken met arrays
-- Variabelen declareren met let en const
+### voorbeeldinteractie
 
-### Functionele analyse
+![voorbeeldinteractie](./voorbeeldinteractie-textbox-functie.png)
 
-Je programma genereert de eerste N getallen van de Fibonacci-reeks op basis van een hardcoded waarde.
+## oefening 10: name-from-email-functie
 
-### Technische analyse
+### leerdoelen
 
-- Declareer een const `numberOfGeneratedNumbers` (het aantal te genereren getallen voor het programma stopt) en ken hier een getal aan toe.
-- Gebruik een array om de Fibonacci-getallen op te slaan.
-- Gebruik een loop om de reeks op te bouwen.
-- Print de reeks uit in de console.
+* input lezen
+* lussen
+* schrijven van eigen functies
+
+### functionele analyse
+
+Het programma toont het gedeelte van de e-mailadres dat de naam voorstelt.
+
+### technische analyse
+
+Je kan de code van hergebruiken uit een eerdere oefening. Je moet ze opnieuw nog omzetten naar een functie.
+
+Je maakt een functie `nameFromEmail` met 1 parameter die een email adres bevat. Deze functie geeft de voor en de achternaam terug in hoofdletters.
+
+Je vraagt de gebruiker op een interactieve manier achter zijn email adres.
+
+Je blijft een email adres vragen totdat deze een lege string ingeeft.
+
+### voorbeeldinteractie
+
+![voorbeeldinteractie](./voorbeeldinteractie-name-from-email-functie.gif)
+
+## oefening 11: maaltafel-functie
+
+### leerdoelen
+
+* gebruiken van lussen
+* schrijven van eigen functies
+
+### functionele analyse
+
+Je programma print de maaltafels van 1 tot en met 10 af (met 10 iteraties)
+
+### technische analyse
+
+Je kan code van een eerdere oefening herbruiken.
+
+Je maakt een functie `printMaaltafel` met 2 parameters: getal en iteraties. Deze functie print de maaltafel af van het gegeven getal en iteraties. De functie geeft niets terug en print enkel deze maaltafel af.
+
+Zorg ervoor dat je voor de getallen 1 tot en met 10 de maaltafel afprint.
+
+Je kan de getallen mooi oplijnen aan de hand van het  karakter. Zorg voor een 3de optionele parameter `separator` waarmee je de separator mee kan geven. Zorg voor een default  waarde voor deze separator als deze niet opgegeven wordt
+
+### voorbeeldinteractie
+
+![voorbeeldinteractie](./voorbeeldinteractie-maaltafel-functie.png)
+
+## oefening 12: schrikkeljaar-functie
+
+### leerdoelen
+
+* gebruiken van lussen
+* schrijven van eigen functies
+
+### functionele analyse
+
+Je programma toont een overzicht van alle schrikkeljaren tussen 1950 en het huidige jaartal.
+
+### technische analyse
+
+Je kan code herbruiken uit een eerdere oefening.
+
+Je maakt een functie `isLeapYear` die 1 parameter aanvaardt met het jaartal en de functie geeft true terug als het een schrikkeljaar is en false als het geen schrikkeljaar is. Reminder: een schrikkeljaar is elk veelvoud van 400, alsook elk ander getal dat een veelvoud is van 4 maar niet van 100.
+
+Je gebruikt een lus om voor de jaartallen tussen 1950 en dit jaar te berekenen of het een schrikkeljaar is of niet. Je print het jaar af als het een schrikkeljaar is.
+
+Je kan het huidige jaar verkrijgen met de volgende code
+
+```js
+new Date().getFullYear();
+```
+
+### voorbeeldinteractie
+
+![voorbeeldinteractie](./voorbeeldinteractie-schrikkeljaar-functie.png)
+
+## oefening 13: array-sum
+
+### leerdoelen
+
+* gebruiken van lussen
+* schrijven van eigen functies
+* arrays
+
+### functionele analyse
+
+Je programma berekent de som van een array
+
+### technische analyse
+
+Je maakt een functie `sum` die een array inneemt als parameter.
+
+Print in deze functie eerst de array af met `console.log`;
+
+Deze functie zal een `for` lus bevatten die de som berekent van de getallen in de array.
+
+Deze functie geeft de som van de getallen in de array terug.
+
+### voorbeeldinteractie
+
+![voorbeeldinteractie](./voorbeeldinteractie-array-sum-functie.png)
