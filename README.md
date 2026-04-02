@@ -25,7 +25,6 @@ webtechnologie/
 ```
 
 - Gebruik steeds JS modules om globale variabelen te vermijden (`<script type="module" src="./path/to/script.js"></script>`)
-- Zet je Javascript file steeds in strict mode (`"use strict"`);
 - Volg de [Coding Guidelines](https://apwt.gitbook.io/webtechnologie/coding-guidelines)
 
 
@@ -52,7 +51,7 @@ Vervolgens maak je een lus die van 0 tot het aantal getallen in de array itereer
 De som print je af op in de console.
 
 #### voorbeeldinteractie
-![voorbeeldinteractie som](./voorbeeldinteractie-som.avif)
+![voorbeeldinteractie som](./voorbeeldinteractie-som.png)
 
 ### oefening 2: namen
 
@@ -74,11 +73,11 @@ Controleer dat de lengte van beide arrays gelijk is. Zo niet print je een foutbo
 
 Gebruik een for-loop om door de lijst van namen te loopen.
 
-Toon vervolgens een lijst uit met voor- en achternamen op de scherm van de browser.
+Print vervolgens de volledige namen in de console.
 
 #### voorbeeldinteractie
 
-![voorbeeldinteractie namen](./voorbeeldinteractie-namen.avif)
+![voorbeeldinteractie namen](./voorbeeldinteractie-namen.png)
 
 ### oefening 3: vrienden
 
@@ -94,17 +93,17 @@ Je programma vraagt hoeveel vrienden er moeten worden ingevoerd. Op basis daarva
 
 #### technische analyse
 
-Vraag de gebruiker hoeveel namen er moeten worden ingegeven. Maak hiervoor gebruik van input-veld.
+Vraag de gebruiker hoeveel namen er moeten worden ingegeven. Maak hiervoor gebruik van `prompt()`.
 
-Vraag dan X aantal keer de naam van de vriend dat je wenst toe te voegen. **Hint**: je kan voor deze oefening `prompt()` gebruiken om de gebruiker te vragen achter de namen.
+Vraag dan X aantal keer de naam van de vriend dat je wenst toe te voegen via `prompt()`.
 
 Voeg de vrienden toe aan een array van vrienden.
 
-Toon vervolgens de lijst met vrienden in een lijst.
+Print vervolgens de lijst met vrienden (laatste ingave eerst) in de console.
 
 #### voorbeeldinteractie
 
-![voorbeeldinteractie](./voorbeeldinteractie-vriendenlijst.gif)
+![voorbeeldinteractie](./voorbeeldinteractie-vriendenlijst.png)
 
 ### oefening 4: punten
 
@@ -130,11 +129,11 @@ Gebruik een for-of-loop om door de grades te loopen.
 
 Bereken het gemiddelde, het percentage en het aantal gebuisde vakken.
 
-Toon deze waardes op het scherm in een lijst.
+Print deze waardes in de console.
 
 #### voorbeeldinteractie
 
-![voorbeeldinteractie](./voorbeeldinteractie-punten.gif)
+![voorbeeldinteractie](./voorbeeldinteractie-punten.png)
 
 ### oefening 5: punten met vragen
 
@@ -150,11 +149,11 @@ Je breidt de punten oefening uit zodat de gebruiker zelf de punten kan ingeven.
 
 #### technische analyse
 
-Schrijf eerst een do while loop om de punten te vragen. Op de moment dat de gebruiker geen getal meer ingeeft dan worden dezelfde waarden getoond aan de gebruiker als in de vorige oefening.
+Schrijf eerst een do while loop om de punten te vragen. Op de moment dat de gebruiker geen getal meer ingeeft dan worden dezelfde waarden als in de vorige oefening in de console geprint.
 
 #### voorbeeldinteractie
 
-![voorbeeldinteractie](./voorbeeldinteractie-punten-met-vragen.gif)
+![voorbeeldinteractie](./voorbeeldinteractie-punten-met-vragen.png)
 
 ### oefening 6: pokémon team
 
@@ -199,7 +198,7 @@ let pokemon = [
 ```
 
 * Maak een array `team`. Deze array bevat de pokémon van de gebruiker van het programma.
-* Gebruik een lus om de pokémon in een genummerde lijst te tonen aan de gebruiker.
+* Gebruik een lus om de pokémon in een genummerde lijst te printen in de console.
 
 ```
 1. Bulbasaur
@@ -237,7 +236,7 @@ Deze pokemon ken ik niet
 Welke pokemon wil je in je team? [1-21]: 4
 ```
 
-* Als je STOP hebt ingegeven dan wordt het team van de gebruiker op het scherm getoond:
+* Als je STOP hebt ingegeven dan wordt het team van de gebruiker in de console getoond:
 
 ```
 Welke pokemon wil je in je team? [0-20]: 1
@@ -258,7 +257,7 @@ Jouw team van pokemon is:
 
 #### voorbeeldinteractie
 
-![voorbeeldinteractie](./voorbeeldinteractie-pokemonteam.gif)
+![voorbeeldinteractie](./voorbeeldinteractie-pokemonteam.png)
 
 ### oefening 7: tweedimensionale som
 
@@ -283,7 +282,7 @@ let spreadsheet = [
 ```
 
 * Maak een variabele `sumRow1` en ken de som van de drie elementen van de eerste rij hieraan toe.
-* Print de som uit op het scherm.
+* Print de som in de console.
 * Doe hetzelfde voor de andere rijen.
 
 #### voorbeeldinteractie
@@ -321,7 +320,7 @@ de ingredienten bevatten een:
 
 Maak het object aan met zelfgekozen values en ken deze toe aan aan variabele `spaghetti`.
 
-Print de naam van dit gerecht af (via de dot-notatie) gevolgd door de totaalprijs van alle ingredienten.
+Print de naam van dit gerecht (via de dot-notatie) gevolgd door de totaalprijs van alle ingredienten in de console.
 
 #### voorbeeldinteractie
 
@@ -334,7 +333,6 @@ Print de naam van dit gerecht af (via de dot-notatie) gevolgd door de totaalprij
 * objecten aanmaken
 * dot-notatie gebruiken
 * gebruik/uitlezen van JSON
-* schrijven van functies
 
 #### functionele analyse
 
@@ -358,8 +356,8 @@ Maak een **person.json** bestand aan met volgende data:
 ```
 
 1. Lees het _person.json_ bestand in
-2. Maak een eerste functie _printFullName()_ dat het ingelezen object als parameter ontvangt en de volledige naam van de persoon uitprint.
-3. Maak een tweede functie _printHobbies()_ dat het ingelezen object als parameter ontvangt en de hobby's van de persoon oplijst.
+2. Print de volledige naam van de persoon in de console via dot-notatie.
+3. Gebruik een for-loop om de hobby's van de persoon één voor één in de console op te lijsten.
 
 #### voorbeeldinteractie
 
@@ -372,7 +370,6 @@ Maak een **person.json** bestand aan met volgende data:
 * objecten aanmaken
 * dot-notatie gebruiken
 * gebruik/uitlezen van JSON
-* schrijven van functies
 * werken met arrays van objecten
 
 #### functionele analyse
@@ -382,8 +379,9 @@ Lees todos.json (aanwezig naast deze README file) uit en haal er enkel de reeds 
 #### technische analyse
 
 1. Maak een array van Todos door het bestand todos.json uit te lezen.
-2. Schrijf een functie _getCompleted()_ dat als parameter je array ontvangt. Zorg ervoor dat de functie een array teruggeeft met _enkel de voltooide_ todo's.
-3. Toon de voltooide todo's op de website in een lijst.
+2. Maak een lege array `completedTodos`.
+3. Gebruik een for-loop om door de todos te itereren. Voeg elke voltooide todo toe aan `completedTodos`.
+4. Print de titels van de voltooide todo's in de console.
 
 #### voorbeeldinteractie
 
@@ -407,10 +405,12 @@ Toon de gebruiker een lijst van dieren. Nadat de gebruiker een dier kiest wordt 
 
 Maak een array van dieren `animalData` door het bestand dieren.json in te lezen d.m.v. `import`.
 
-Maak een functie _getAnimalsList() dat de animal\[] als parameter ontvangt en een string\[] van alle dierennamen teruggeeft._
+Maak een functie _getAnimalsList()_ dat de `animal[]` als parameter ontvangt en een `string[]` van alle dierennamen teruggeeft.
 
-Nu kan je de gebruiker laten kiezen uit 1 van de dieren. Gebruik de arraypositie om de info op te vragen van het gekozen dier.
+Print de genummerde lijst van dierennamen in de console.
+
+Gebruik `prompt()` om de gebruiker een dier te laten kiezen op basis van het nummer. Gebruik de arraypositie om de info op te vragen van het gekozen dier en print deze in de console.
 
 #### voorbeeldinteractie
 
-![voorbeeldinteractie](./voorbeeldinteractie-dieren.gif)
+![voorbeeldinteractie](./voorbeeldinteractie-dieren.png)
