@@ -112,6 +112,7 @@ Print vervolgens de lijst met vrienden (laatste ingave eerst) in de console.
 * werken met for-of-loop
 * werken met arrays
 * wiskundige bewerkingen
+* gebruiken van een do while loop (uitbreiding)
 
 #### functionele analyse
 
@@ -131,29 +132,49 @@ Bereken het gemiddelde, het percentage en het aantal gebuisde vakken.
 
 Print deze waardes in de console.
 
+#### uitbreiding
+
+Breid je programma uit zodat de gebruiker de punten zelf ingeeft in plaats van ze vast in de array te zetten. Vraag met een `do while` lus telkens een punt via `prompt()` en voeg het toe aan de array. Van zodra de gebruiker geen getal meer ingeeft, stopt de lus en print je dezelfde waardes als hierboven. De berekening zelf verandert niet.
+
 #### voorbeeldinteractie
 
 ![voorbeeldinteractie](./voorbeeldinteractie-punten.png)
 
-### oefening 5: punten met vragen
+### oefening 5: boodschappenlijst
 
 #### leerdoelen
 
-* gebruiken van do while loop
-* werken met arrays
-* input vragen
+* een array maken uit een string met `split()`
+* elementen toevoegen en verwijderen met `push()`, `unshift()`, `pop()`, `shift()` en `splice()`
+* een element vervangen via zijn index
+* zoeken in een array met `indexOf()`
+* een array afdrukken met `join()`
 
 #### functionele analyse
 
-Je breidt de punten oefening uit zodat de gebruiker zelf de punten kan ingeven.
+Je programma beheert een boodschappenlijst. De lijst vertrekt van één string en wordt stap per stap aangepast. Na elke bewerking laat je in de console zien wat er gebeurd is.
 
 #### technische analyse
 
-Schrijf eerst een do while loop om de punten te vragen. Op de moment dat de gebruiker geen getal meer ingeeft dan worden dezelfde waarden als in de vorige oefening in de console geprint.
+Je begint met volgende string:
+
+```
+const input = "brood,melk,kaas,appels";
+```
+
+* Maak met `split()` een array `shoppingList` van deze string. Print hoeveel boodschappen de lijst bevat.
+* Voeg `"boter"` achteraan toe met `push()` en `"koffie"` vooraan met `unshift()`. Print de volledige lijst met `join(" | ")`.
+* De laatste boodschap valt weg: verwijder die met `pop()`. Deze methode geeft het verwijderde element terug, dus print welke boodschap wegvalt.
+* Het eerste element heb je nog in huis: verwijder dat met `shift()` en print welke boodschap dat was.
+* Je wil geen kaas maar hummus. Zoek de index van `"kaas"` met `indexOf()` en vervang het element op die index door `"hummus"`. Print op welke index kaas stond.
+* Zoek de index van `"chips"`. Die staat niet op je lijst, dus `indexOf()` geeft `-1` terug. Print in dat geval een melding.
+* Vraag het element op index 10 op en print het. Die index bestaat niet, dus je krijgt `undefined`.
+* Verwijder met `splice()` twee elementen vanaf index 1. Print de verwijderde elementen.
+* Print tot slot je definitieve lijst als één regel met `join(", ")`.
 
 #### voorbeeldinteractie
 
-![voorbeeldinteractie](./voorbeeldinteractie-punten-met-vragen.png)
+![voorbeeldinteractie](./voorbeeldinteractie-boodschappenlijst.png)
 
 ### oefening 6: pokémon team
 
@@ -292,45 +313,9 @@ let spreadsheet = [
 
 ![voorbeeldinteractie](./voorbeeldinteractie-2dsom.png)
 
-### oefening 8: boodschappenlijst
-
-#### leerdoelen
-
-* een array maken uit een string met `split()`
-* elementen toevoegen en verwijderen met `push()`, `unshift()`, `pop()`, `shift()` en `splice()`
-* een element vervangen via zijn index
-* zoeken in een array met `indexOf()`
-* een array afdrukken met `join()`
-
-#### functionele analyse
-
-Je programma beheert een boodschappenlijst. De lijst vertrekt van één string en wordt stap per stap aangepast. Na elke bewerking laat je in de console zien wat er gebeurd is.
-
-#### technische analyse
-
-Je begint met volgende string:
-
-```
-const input = "brood,melk,kaas,appels";
-```
-
-* Maak met `split()` een array `shoppingList` van deze string. Print hoeveel boodschappen de lijst bevat.
-* Voeg `"boter"` achteraan toe met `push()` en `"koffie"` vooraan met `unshift()`. Print de volledige lijst met `join(" | ")`.
-* De laatste boodschap valt weg: verwijder die met `pop()`. Deze methode geeft het verwijderde element terug, dus print welke boodschap wegvalt.
-* Het eerste element heb je nog in huis: verwijder dat met `shift()` en print welke boodschap dat was.
-* Je wil geen kaas maar hummus. Zoek de index van `"kaas"` met `indexOf()` en vervang het element op die index door `"hummus"`. Print op welke index kaas stond.
-* Zoek de index van `"chips"`. Die staat niet op je lijst, dus `indexOf()` geeft `-1` terug. Print in dat geval een melding.
-* Vraag het element op index 10 op en print het. Die index bestaat niet, dus je krijgt `undefined`.
-* Verwijder met `splice()` twee elementen vanaf index 1. Print de verwijderde elementen.
-* Print tot slot je definitieve lijst als één regel met `join(", ")`.
-
-#### voorbeeldinteractie
-
-![voorbeeldinteractie](./voorbeeldinteractie-boodschappenlijst.png)
-
 ## Oefeningen objecten en JSON
 
-### oefening 9: recept
+### oefening 8: recept
 
 #### leerdoelen
 
@@ -365,7 +350,7 @@ Print de naam van dit gerecht (via de dot-notatie) gevolgd door de totaalprijs v
 
 ![voorbeeldinteractie](./voorbeeldinteractie-recept.png)
 
-### oefening 10: persoon
+### oefening 9: persoon
 
 #### leerdoelen
 
@@ -402,7 +387,7 @@ Maak een **person.json** bestand aan met volgende data:
 
 ![voorbeeldinteractie](./voorbeeldinteractie-person.png)
 
-### oefening 11: todo's
+### oefening 10: todo's
 
 #### leerdoelen
 
@@ -426,7 +411,7 @@ Lees todos.json (aanwezig naast deze README file) uit en haal er enkel de reeds 
 
 ![voorbeeldinteractie](./voorbeeldinteractie-todos.png)
 
-### oefening 12: dieren
+### oefening 11: dieren
 
 #### leerdoelen
 
