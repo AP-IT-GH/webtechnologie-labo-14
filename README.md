@@ -264,6 +264,7 @@ Jouw team van pokemon is:
 #### leerdoelen
 
 * twee dimensionale arrays
+* geneste lussen
 
 #### functionele analyse
 
@@ -284,14 +285,52 @@ let spreadsheet = [
 * Maak een variabele `sumRow1` en ken de som van de drie elementen van de eerste rij hieraan toe.
 * Print de som in de console.
 * Doe hetzelfde voor de andere rijen.
+* Bereken daarna het totaal van de hele tabel. Gebruik hiervoor een geneste lus: de buitenste lus gaat over de rijen, de binnenste lus over de waarden in die rij.
+* Print dit totaal in de console.
 
 #### voorbeeldinteractie
 
 ![voorbeeldinteractie](./voorbeeldinteractie-2dsom.png)
 
+### oefening 8: boodschappenlijst
+
+#### leerdoelen
+
+* een array maken uit een string met `split()`
+* elementen toevoegen en verwijderen met `push()`, `unshift()`, `pop()`, `shift()` en `splice()`
+* een element vervangen via zijn index
+* zoeken in een array met `indexOf()`
+* een array afdrukken met `join()`
+
+#### functionele analyse
+
+Je programma beheert een boodschappenlijst. De lijst vertrekt van één string en wordt stap per stap aangepast. Na elke bewerking laat je in de console zien wat er gebeurd is.
+
+#### technische analyse
+
+Je begint met volgende string:
+
+```
+const input = "brood,melk,kaas,appels";
+```
+
+* Maak met `split()` een array `shoppingList` van deze string. Print hoeveel boodschappen de lijst bevat.
+* Voeg `"boter"` achteraan toe met `push()` en `"koffie"` vooraan met `unshift()`. Print de volledige lijst met `join(" | ")`.
+* De laatste boodschap valt weg: verwijder die met `pop()`. Deze methode geeft het verwijderde element terug, dus print welke boodschap wegvalt.
+* Het eerste element heb je nog in huis: verwijder dat met `shift()` en print welke boodschap dat was.
+* Je wil geen kaas maar hummus. Zoek de index van `"kaas"` met `indexOf()` en vervang het element op die index door `"hummus"`. Print op welke index kaas stond.
+* Zoek de index van `"chips"`. Die staat niet op je lijst, dus `indexOf()` geeft `-1` terug. Print in dat geval een melding.
+* Vraag het element op index 10 op en print het. Die index bestaat niet, dus je krijgt `undefined`.
+* Verwijder met `splice()` twee elementen vanaf index 1. Print de verwijderde elementen.
+* Print tot slot je definitieve lijst als één regel met `join(", ")`.
+
+#### voorbeeldinteractie
+
+![voorbeeldinteractie](./voorbeeldinteractie-boodschappenlijst.png)
+
 ## Oefeningen objecten en JSON
 
-### oefening 8: recept
+### oefening 9: recept
 
 #### leerdoelen
 
@@ -326,7 +365,7 @@ Print de naam van dit gerecht (via de dot-notatie) gevolgd door de totaalprijs v
 
 ![voorbeeldinteractie](./voorbeeldinteractie-recept.png)
 
-### oefening 9: persoon
+### oefening 10: persoon
 
 #### leerdoelen
 
@@ -363,7 +402,7 @@ Maak een **person.json** bestand aan met volgende data:
 
 ![voorbeeldinteractie](./voorbeeldinteractie-person.png)
 
-### oefening 10: todo's
+### oefening 11: todo's
 
 #### leerdoelen
 
@@ -387,7 +426,7 @@ Lees todos.json (aanwezig naast deze README file) uit en haal er enkel de reeds 
 
 ![voorbeeldinteractie](./voorbeeldinteractie-todos.png)
 
-### oefening 11: dieren
+### oefening 12: dieren
 
 #### leerdoelen
 
