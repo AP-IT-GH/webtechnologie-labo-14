@@ -427,13 +427,11 @@ Toon de gebruiker een lijst van dieren. Nadat de gebruiker een dier kiest wordt 
 
 #### technische analyse
 
-Maak een array van dieren `animalData` door het bestand dieren.json in te lezen d.m.v. `import`.
-
-Maak een functie _getAnimalsList()_ dat de `animal[]` als parameter ontvangt en een `string[]` van alle dierennamen teruggeeft.
-
-Print de genummerde lijst van dierennamen in de console.
-
-Gebruik `prompt()` om de gebruiker een dier te laten kiezen op basis van het nummer. Gebruik de arraypositie om de info op te vragen van het gekozen dier en print deze in de console.
+1. Maak een array van dieren `animalsData` door het bestand dieren.json in te lezen d.m.v. `import`.
+2. Gebruik een for-loop om de genummerde lijst van dierennamen in de console te printen.
+3. Gebruik `prompt()` om de gebruiker een dier te laten kiezen op basis van het nummer.
+4. Gebruik de arraypositie om het gekozen dier uit de array te halen en print de info van dat dier in de console.
+5. Kiest de gebruiker een nummer dat niet in de lijst staat, print dan een foutmelding.
 
 #### voorbeeldinteractie
 
