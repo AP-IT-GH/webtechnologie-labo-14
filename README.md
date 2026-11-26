@@ -30,117 +30,7 @@ webtechnologie/
 
 ## Oefeningen arrays
 
-### oefening 1: som
-
-#### leerdoelen
-
-* werken met arrays
-* lengte van arrays opvragen
-* arrays doorlopen met een for-loop
-
-#### functionele analyse
-
-Je programma geeft de som van een rij getallen terug.
-
-#### technische analyse
-
-Je begint met een `array` te maken van de getallen 1, 2, 3, 4, 5 en 6. Je maakt een variabele `som` en kent er de waarde 0 aan toe.
-
-Vervolgens maak je een lus die van 0 tot het aantal getallen in de array itereert. Elke iteratie tel je het huidige getal op bij een variabele som.
-
-De som print je af op in de console.
-
-#### voorbeeldinteractie
-![voorbeeldinteractie som](./voorbeeldinteractie-som.png)
-
-### oefening 2: namen
-
-#### leerdoelen
-
-* werken met arrays
-* lengte van arrays opvragen
-* arrays doorlopen met een for-loop
-
-#### functionele analyse
-
-Je programma genereert op basis van 2 arrays een lijst van voor- en achternamen.
-
-#### technische analyse
-
-Maak 2 string-arrays aan. De eerste geef je 5 voornamen, de andere 5 achternamen.
-
-Controleer dat de lengte van beide arrays gelijk is. Zo niet print je een foutboodschap.
-
-Gebruik een for-loop om door de lijst van namen te loopen.
-
-Print vervolgens de volledige namen in de console.
-
-#### voorbeeldinteractie
-
-![voorbeeldinteractie namen](./voorbeeldinteractie-namen.png)
-
-### oefening 3: vrienden
-
-#### leerdoelen
-
-* werken met gebruikersinteractie
-* werken met for-loop
-* toevoegen van elementen in een array
-
-#### functionele analyse
-
-Je programma vraagt hoeveel vrienden er moeten worden ingevoerd. Op basis daarvan kan je daarna je vrienden toevoegen aan een lijst. Nadien wordt de lijst uitgeprint (laatste ingave eerst).
-
-#### technische analyse
-
-Vraag de gebruiker hoeveel namen er moeten worden ingegeven. Maak hiervoor gebruik van `prompt()`.
-
-Vraag dan X aantal keer de naam van de vriend dat je wenst toe te voegen via `prompt()`.
-
-Voeg de vrienden toe aan een array van vrienden.
-
-Print vervolgens de lijst met vrienden (laatste ingave eerst) in de console.
-
-#### voorbeeldinteractie
-
-![voorbeeldinteractie](./voorbeeldinteractie-vriendenlijst.png)
-
-### oefening 4: punten
-
-#### leerdoelen
-
-* werken met for-of-loop
-* werken met arrays
-* wiskundige bewerkingen
-* gebruiken van een do while loop (uitbreiding)
-
-#### functionele analyse
-
-Je programma verwerkt een puntenlijst aan resultaten en print het gemiddelde, het percentage en het aantal gebuisde vakken uit. Het percentage is datzelfde gemiddelde, maar uitgedrukt op 100 punten in plaats van op 20.
-
-#### technische analyse
-
-Gebruik voor deze oefening volgende array:
-
-```
-const grades = [16,12,16,7,17,14,9,8,18,12];
-```
-
-Gebruik een for-of-loop om door de grades te loopen.
-
-Bereken het gemiddelde, het percentage en het aantal gebuisde vakken. Het gemiddelde staat op 20, dus reken het om naar een percentage op 100.
-
-Print deze waardes in de console.
-
-#### uitbreiding
-
-Breid je programma uit zodat de gebruiker de punten zelf ingeeft in plaats van ze vast in de array te zetten. Vraag met een `do while` lus telkens een punt via `prompt()` en voeg het toe aan de array. Van zodra de gebruiker geen getal meer ingeeft, stopt de lus en print je dezelfde waardes als hierboven. De berekening zelf verandert niet.
-
-#### voorbeeldinteractie
-
-![voorbeeldinteractie](./voorbeeldinteractie-punten.png)
-
-### oefening 5: boodschappenlijst
+### oefening 1: boodschappenlijst
 
 #### leerdoelen
 
@@ -175,6 +65,116 @@ const input = "brood,melk,kaas,appels";
 #### voorbeeldinteractie
 
 ![voorbeeldinteractie](./voorbeeldinteractie-boodschappenlijst.png)
+
+### oefening 2: som
+
+#### leerdoelen
+
+* werken met arrays
+* lengte van arrays opvragen
+* arrays doorlopen met een for-loop
+
+#### functionele analyse
+
+Je programma geeft de som van een rij getallen terug.
+
+#### technische analyse
+
+Je begint met een `array` te maken van de getallen 1, 2, 3, 4, 5 en 6. Je maakt een variabele `som` en kent er de waarde 0 aan toe.
+
+Vervolgens maak je een lus die van 0 tot het aantal getallen in de array itereert. Elke iteratie tel je het huidige getal op bij een variabele som.
+
+De som print je af op in de console.
+
+#### voorbeeldinteractie
+![voorbeeldinteractie som](./voorbeeldinteractie-som.png)
+
+### oefening 3: namen
+
+#### leerdoelen
+
+* werken met arrays
+* lengte van arrays opvragen
+* arrays doorlopen met een for-loop
+
+#### functionele analyse
+
+Je programma genereert op basis van 2 arrays een lijst van voor- en achternamen.
+
+#### technische analyse
+
+Maak 2 string-arrays aan. De eerste geef je 5 voornamen, de andere 5 achternamen.
+
+Controleer dat de lengte van beide arrays gelijk is. Zo niet print je een foutboodschap.
+
+Gebruik een for-loop om door de lijst van namen te loopen.
+
+Print vervolgens de volledige namen in de console.
+
+#### voorbeeldinteractie
+
+![voorbeeldinteractie namen](./voorbeeldinteractie-namen.png)
+
+### oefening 4: vrienden
+
+#### leerdoelen
+
+* werken met gebruikersinteractie
+* werken met for-loop
+* toevoegen van elementen in een array
+
+#### functionele analyse
+
+Je programma vraagt hoeveel vrienden er moeten worden ingevoerd. Op basis daarvan kan je daarna je vrienden toevoegen aan een lijst. Nadien wordt de lijst uitgeprint (laatste ingave eerst).
+
+#### technische analyse
+
+Vraag de gebruiker hoeveel namen er moeten worden ingegeven. Maak hiervoor gebruik van `prompt()`.
+
+Vraag dan X aantal keer de naam van de vriend dat je wenst toe te voegen via `prompt()`.
+
+Voeg de vrienden toe aan een array van vrienden.
+
+Print vervolgens de lijst met vrienden (laatste ingave eerst) in de console.
+
+#### voorbeeldinteractie
+
+![voorbeeldinteractie](./voorbeeldinteractie-vriendenlijst.png)
+
+### oefening 5: punten
+
+#### leerdoelen
+
+* werken met for-of-loop
+* werken met arrays
+* wiskundige bewerkingen
+* gebruiken van een do while loop (uitbreiding)
+
+#### functionele analyse
+
+Je programma verwerkt een puntenlijst aan resultaten en print het gemiddelde, het percentage en het aantal gebuisde vakken uit. Het percentage is datzelfde gemiddelde, maar uitgedrukt op 100 punten in plaats van op 20.
+
+#### technische analyse
+
+Gebruik voor deze oefening volgende array:
+
+```
+const grades = [16,12,16,7,17,14,9,8,18,12];
+```
+
+Gebruik een for-of-loop om door de grades te loopen.
+
+Bereken het gemiddelde, het percentage en het aantal gebuisde vakken. Het gemiddelde staat op 20, dus reken het om naar een percentage op 100.
+
+Print deze waardes in de console.
+
+#### uitbreiding
+
+Breid je programma uit zodat de gebruiker de punten zelf ingeeft in plaats van ze vast in de array te zetten. Vraag met een `do while` lus telkens een punt via `prompt()` en voeg het toe aan de array. Van zodra de gebruiker geen getal meer ingeeft, stopt de lus en print je dezelfde waardes als hierboven. De berekening zelf verandert niet.
+
+#### voorbeeldinteractie
+
+![voorbeeldinteractie](./voorbeeldinteractie-punten.png)
 
 ### oefening 6: pokémon team
 
