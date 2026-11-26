@@ -116,7 +116,7 @@ Print vervolgens de lijst met vrienden (laatste ingave eerst) in de console.
 
 #### functionele analyse
 
-Je programma verwerkt een puntenlijst aan resultaten en print het gemiddelde, het percentage en het aantal gebuisde vakken uit.
+Je programma verwerkt een puntenlijst aan resultaten en print het gemiddelde, het percentage en het aantal gebuisde vakken uit. Het percentage is datzelfde gemiddelde, maar uitgedrukt op 100 punten in plaats van op 20.
 
 #### technische analyse
 
@@ -128,7 +128,7 @@ const grades = [16,12,16,7,17,14,9,8,18,12];
 
 Gebruik een for-of-loop om door de grades te loopen.
 
-Bereken het gemiddelde, het percentage en het aantal gebuisde vakken.
+Bereken het gemiddelde, het percentage en het aantal gebuisde vakken. Het gemiddelde staat op 20, dus reken het om naar een percentage op 100.
 
 Print deze waardes in de console.
 
